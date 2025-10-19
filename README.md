@@ -11,12 +11,25 @@ To write a Python program that calculates the **area of a circle** based on the 
 4. **Execute the program**: Create an object of the class and call the method with the radius value.
 
 ## 🧾 Program
+```
+class cse:
+    def mech(self, radius):
+        pi = 3.14159
+        area = pi * radius ** 2
+        return area
 
-Add code here
+radius = int(input("Enter the radius of the circle: "))
+circle = cse()
+area = circle.mech(radius)
+print("Area of the circle:", area)
+```
 
 ## Output
+<img width="1920" height="1080" alt="Screenshot 2025-10-19 162150" src="https://github.com/user-attachments/assets/f9a74b45-343e-45d2-9443-9cffea136944" />
 
 ## Result
+Thus To write a Python program that calculates the **area of a circle** based on the radius provided by the user. This program uses a class named `cse` and a method `mech` to perform the calculation has been executed sucessfully.
+
 
 ## Dictionary Operations in Python: Merging Two Dictionaries
 
@@ -30,12 +43,22 @@ To write a Python program that merges **two dictionaries** and combines their ke
 3. Call the `merge()` function and print the merged dictionary.
 
 ## 🧾 Program
+```
+def merge(dict1, dict2):
+    return {**dict1, **dict2}
 
-Add code here
+dict1 = {'a': 1, 'b': 2, 'c': 3}
+dict2 = {'b': 4, 'd': 5}
+
+merged_dict = merge(dict1, dict2)
+print("Merged dictionary:", merged_dict)
+```
 
 ## Output
+<img width="1920" height="1080" alt="Screenshot 2025-10-19 162506" src="https://github.com/user-attachments/assets/127e1161-eee4-437b-bad8-bd7b1b6fe010" />
 
 ## Result
+Thus To write a Python program that merges **two dictionaries** and combines their key-value pairs has been executed sucessfully.
 
 
 # 🔤 Dictionary-Python Program to Sort a Dictionary by Keys and Values
@@ -70,12 +93,28 @@ To write a Python program that sorts a dictionary's:
 ---
 
 ## 🧪Program
-Add Code here
+```
+original_dict = {'apple': 'fruit', 'carrot': 'vegetable', 'banana': 'fruit', 'date': 'dry fruit'}
+
+# Sort dictionary by keys
+sorted_by_keys = dict(sorted(original_dict.items()))
+
+# Sort dictionary by values
+sorted_by_values = dict(sorted(original_dict.items(), key=lambda item: item[1]))
+
+print("Original dictionary:", original_dict)
+print("Sorted by keys:", sorted_by_keys)
+print("Sorted by values:", sorted_by_values)
+```
 
 ## Sample Output
+<img width="1920" height="1080" alt="Screenshot 2025-10-19 162807" src="https://github.com/user-attachments/assets/757183f6-9fc9-49df-aab6-077711f6ec41" />
 
 ## Result
-
+Thus To write a Python program that sorts a dictionary's:
+- Keys in alphabetical order
+- Values in alphabetical order
+has been executed sucessfully
 
 # Exception Handling in Python: Avoiding Index Errors
 
@@ -90,11 +129,22 @@ To write a Python program that handles an **IndexError** when trying to access a
 3. Print the result based on whether the index access succeeds or fails.
 
 ## 🧾 Program
-Add code here
+```
+list1 = [10, 20, 30, 40]
+
+try:
+    # Attempt to access an out-of-range index
+    value = list1[5]
+    print("Accessed value:", value)
+except IndexError:
+    print("You're out of list range")
+```
 
 ## Output
+<img width="1920" height="1080" alt="Screenshot 2025-10-19 163022" src="https://github.com/user-attachments/assets/14266f4e-9065-40ca-afc2-270d047b0d6b" />
 
 ## Result
+Thus To write a Python program that handles an **IndexError** when trying to access an element beyond the available range of a list hass been executed sucessfully.
 
 
 # File Handling in Python: Count Lines Not Starting with 'T'
@@ -111,8 +161,20 @@ To write a Python program that counts the number of lines in a text file `story.
 4. After processing all lines, print the `count` value, which represents the number of lines that do not start with `'T'`.
 
 ## 🧾 Program
-Add code here
+```
+count = 0
+
+with open('story.txt', 'r') as file:
+    for line in file:
+        if not line.startswith('T'):
+            count += 1
+
+print("Number of lines not starting with 'T':", count)
+```
 
 ## Output
-
+```
+Number of lines not starting with "T": 3
+```
 ## Result
+Thus To write a Python program that counts the number of lines in a text file `story.txt` that do **not** start with the alphabet `'T'` has been exeuted succesfully.
